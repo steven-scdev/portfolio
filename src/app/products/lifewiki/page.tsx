@@ -2,19 +2,42 @@ import {
   BadgeCheck,
   Users,
   Zap,
-  Shield,
-  LineChart,
   Brain,
   Target,
   AlertTriangle,
   Rocket,
   Clock,
   Sparkles,
+  Globe,
+  Apple,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function LifeWikiProduct() {
   return (
     <div className="max-w-4xl mx-auto mt-16 space-y-16">
+      {/* Navigation Buttons */}
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Link
+          href="https://www.lifewiki.xyz/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-purple-600 text-white hover:bg-purple-700 transition-colors duration-200"
+        >
+          <Globe className="w-5 h-5 mr-2" />
+          Visit Website
+        </Link>
+        <Link
+          href="https://apps.apple.com/us/app/lifewiki/id1635640563"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center px-6 py-3 rounded-lg border-2 border-purple-600 text-purple-600 hover:bg-purple-50 transition-colors duration-200"
+        >
+          <Apple className="w-5 h-5 mr-2" />
+          Download on App Store
+        </Link>
+      </div>
+
       {/* Challenge Section */}
       <section className="space-y-6">
         <div className="border-l-4 border-purple-500 pl-4">
