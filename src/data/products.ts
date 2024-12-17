@@ -5,6 +5,7 @@ export interface Product {
   image: string;
   tags?: string[];
   link: string;
+  profileImage: string;
 }
 
 export const products: Product[] = [
@@ -15,6 +16,7 @@ export const products: Product[] = [
     image: "/LifeWiki.jpg",
     link: "/products/lifewiki",
     tags: ["iOS", "Mobile App", "Productivity"],
+    profileImage: "/android_logo.png",
   },
   // ... more products
 ];

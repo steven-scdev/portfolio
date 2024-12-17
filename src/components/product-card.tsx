@@ -11,12 +11,12 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={product.link}>
       <div className="group rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all">
-        <div className="w-full h-screen relative">
+        <div className="relative aspect-square w-full overflow-hidden">
           <Image
             src={product.image}
             alt={product.title}
             fill
-            className="object-contain"
+            className="object-cover"
             priority
           />
         </div>

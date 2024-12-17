@@ -1,5 +1,8 @@
+import Image from "next/image";
 import { products } from "@/data/products";
 import { ProductCard } from "../../components/product-card";
+
+const DEFAULT_PRODUCT_IMAGE = "/android_logo.png";
 
 export default function ProductsPage() {
   return (
@@ -13,7 +16,10 @@ export default function ProductsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {products.map((product) => (
-          <ProductCard key={product.slug} product={product} />
+          <ProductCard
+            key={product.slug}
+            product={{ ...product, image: product.profileImage }}
+          />
         ))}
       </div>
     </main>
