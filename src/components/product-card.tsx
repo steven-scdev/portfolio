@@ -7,6 +7,15 @@ interface ProductCardProps {
   product: Product;
 }
 
+function generatePastelColor(str: string): string {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = str.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const h = hash % 360;
+  return `hsl(${h}, 70%, 90%)`; // Pastel color with fixed saturation and lightness
+}
+
 export function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={product.link}>
@@ -25,7 +34,16 @@ export function ProductCard({ product }: ProductCardProps) {
           <p className="text-muted-foreground">{product.description}</p>
           <div className="flex flex-wrap gap-2">
             {product.tags.map((tag) => (
-              <Badge key={tag} variant="secondary">
+              <Badge
+                key={tag}
+                variant="secondary"
+                style={{
+                  backgroundColor: generatePastelColor(tag),
+                  padding: "0.5rem 1rem",
+                  fontSize: "0.95rem",
+                  color: "#000000",
+                }}
+              >
                 {tag}
               </Badge>
             ))}

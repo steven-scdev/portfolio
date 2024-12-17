@@ -103,7 +103,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             {/* Image Modal */}
             {isImageModalOpen && (
               <div
-                className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+                className="fixed inset-0 bg-white/80 z-50 flex items-center justify-center p-4"
                 onClick={() => setIsImageModalOpen(false)}
               >
                 <div className="relative w-full max-w-5xl h-[90vh]">
@@ -132,7 +132,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             >
               <Button
                 variant="secondary"
-                className="flex items-center gap-2 bg-black/50 hover:bg-black/70 text-white backdrop-blur-sm"
+                className="flex items-center gap-2 bg-white/50 hover:bg-white/70 text-slate-900 backdrop-blur-sm"
               >
                 <DownloadIcon className="h-4 w-4" />
                 Download Image
