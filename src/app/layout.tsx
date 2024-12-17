@@ -11,14 +11,14 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name - Portfolio",
+  title: "Steven Chen - Portfolio",
   description: "Personal portfolio and products showcase",
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -35,9 +35,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navigation />
-          <main className="container mx-auto px-4 py-8">
-            {children}
-          </main>
+          <main className="container mx-auto px-4 py-8">{children}</main>
         </ThemeProvider>
       </body>
     </html>

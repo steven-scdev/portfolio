@@ -8,12 +8,12 @@ export default function Home() {
       <main className="container mx-auto px-4 py-20">
         <div className="flex flex-col gap-8 max-w-3xl">
           <h1 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">
-            Hey, I'm [Your Name] 👋
+            Hey, I'm Steven Chen 👋
           </h1>
           <p className="text-xl text-muted-foreground">
-            I'm a software developer passionate about building products that
-            make a difference. Currently working on exciting projects with
-            modern technologies.
+            I'm a product manager & software developer passionate about building
+            products that make a difference, bridging the gap between technology
+            and society.
           </p>
 
           {/* CTA Buttons */}
@@ -25,7 +25,7 @@ export default function Home() {
               Get in Touch
             </Link>
             <Link
-              href="/projects"
+              href="/products"
               className="px-6 py-3 border border-gray-200 rounded-lg hover:border-gray-300 transition"
             >
               View Projects
@@ -63,11 +63,11 @@ export default function Home() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} [Your Name]. All rights reserved.
+              © {new Date().getFullYear()} [Steven Chen]. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/steven-scdev?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground"
@@ -75,7 +75,7 @@ export default function Home() {
                 GitHub
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://x.com/steven_yujun"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground"
@@ -83,7 +83,7 @@ export default function Home() {
                 Twitter
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/steven-yjchen/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground"

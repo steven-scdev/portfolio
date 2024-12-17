@@ -1,14 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import Image from "next/image";
+import { Product } from "@/data/products";
 import { Badge } from "../../components/ui/badge";
-import { Product } from "@/types";
 
 interface ProductCardProps {
   product: Product;
@@ -17,22 +10,19 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   return (
     <Link href={product.link}>
-      <Card className="overflow-hidden transition-all hover:shadow-lg">
-        <div className="aspect-video relative">
+      <div className="group rounded-lg border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all">
+        <div className="w-full h-screen relative">
           <Image
             src={product.image}
             alt={product.title}
             fill
-            className="object-cover"
+            className="object-contain"
+            priority
           />
         </div>
-        <CardHeader>
-          <CardTitle>{product.title}</CardTitle>
-        </CardHeader>
-        <CardContent>
+        <div className="p-6 space-y-4">
+          <h3 className="text-2xl font-semibold">{product.title}</h3>
           <p className="text-muted-foreground">{product.description}</p>
-        </CardContent>
-        <CardFooter>
           <div className="flex flex-wrap gap-2">
             {product.tags.map((tag) => (
               <Badge key={tag} variant="secondary">
@@ -40,8 +30,8 @@ export function ProductCard({ product }: ProductCardProps) {
               </Badge>
             ))}
           </div>
-        </CardFooter>
-      </Card>
+        </div>
+      </div>
     </Link>
   );
 }
