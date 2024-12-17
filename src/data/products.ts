@@ -1,23 +1,20 @@
-import { Product } from "@/types";
+export interface Product {
+  slug: string;
+  title: string;
+  description: string;
+  image: string;
+  tags?: string[];
+  link: string;
+}
 
 export const products: Product[] = [
   {
-    id: "lifewiki",
+    slug: "lifewiki",
     title: "LifeWiki",
-    description:
-      "A mobile application for life management and organization, featuring a clean and modern design with intuitive user interfaces.",
+    description: "Your personal life management app",
     image: "/LifeWiki.jpg",
     link: "/products/lifewiki",
-    tags: ["Mobile App", "UI/UX", "Design System"],
+    tags: ["iOS", "Mobile App", "Productivity"],
   },
-  {
-    id: "1",
-    title: "Project One",
-    description: "A brief description of project one",
-    image: "/images/project1.png",
-    link: "/products/project-one",
-    tags: ["Next.js", "React", "TypeScript"],
-    featured: true,
-  },
-  // Add more products here
+  // ... more products
 ];
