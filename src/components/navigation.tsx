@@ -33,9 +33,7 @@ export function Navigation() {
   return (
     <nav className="border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold">
-          Steven Chen
-        </Link>
+        <Link href="/" className="text-xl font-bold"></Link>
 
         <div className="flex items-center gap-6">
           {routes.map((route) => (

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, use } from "react";
 import { products } from "@/data/products";
 import { notFound } from "next/navigation";
 import { Badge } from "../../../../components/ui/badge";
@@ -12,8 +15,11 @@ interface ProductPageProps {
 }
 
 export default function ProductPage({ params }: ProductPageProps) {
+  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
+  const resolvedParams = use(params);
+
   // Find the product using the slug
-  const product = products.find((p) => p.slug === params.slug);
+  const product = products.find((p) => p.slug === resolvedParams.slug);
 
   if (!product) {
     notFound();
@@ -40,39 +46,78 @@ export default function ProductPage({ params }: ProductPageProps) {
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap gap-4">
-          {product.websiteUrl && (
-            <a
-              href={product.websiteUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button variant="outline">Visit Website</Button>
-            </a>
-          )}
+        <div className="max-w-4xl mx-auto space-y-6">
+          <div className="flex flex-wrap gap-4">
+            {product.websiteUrl && (
+              <a
+                href={product.websiteUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform transition-transform hover:scale-105"
+              >
+                <Button
+                  variant="secondary"
+                  className="bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
+                    text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
+                    hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
+                >
+                  ✨ Visit Website ✨
+                </Button>
+              </a>
+            )}
 
-          {product.appStoreUrl && (
-            <a
-              href={product.appStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Download on App Store</Button>
-            </a>
-          )}
+            {product.appStoreUrl && (
+              <a
+                href={product.appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transform transition-transform hover:scale-105"
+              >
+                <Button
+                  variant="secondary"
+                  className="bg-gradient-to-r from-pink-100 to-purple-100 hover:from-pink-200 hover:to-purple-200 
+                    text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
+                    hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
+                >
+                  🌟 Download on App Store 🌟
+                </Button>
+              </a>
+            )}
+          </div>
         </div>
       </div>
 
       {/* Product Image/Screenshot */}
       <div className="mt-12 w-full h-[600px] relative rounded-lg overflow-hidden">
         {product.image && (
-          <Image
-            src={product.image}
-            alt={`Screenshot of ${product.title}`}
-            fill
-            className="object-contain"
-            priority
-          />
+          <>
+            <Image
+              src={product.image}
+              alt={`Screenshot of ${product.title}`}
+              fill
+              className="object-contain cursor-pointer"
+              priority
+              onClick={() => setIsImageModalOpen(true)}
+            />
+
+            {/* Image Modal */}
+            {isImageModalOpen && (
+              <div
+                className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+                onClick={() => setIsImageModalOpen(false)}
+              >
+                <div className="relative w-full max-w-5xl h-[90vh]">
+                  <Image
+                    src={product.image}
+                    alt={`Screenshot of ${product.title}`}
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+              </div>
+            )}
+          </>
         )}
 
         {/* Download Image Button */}
