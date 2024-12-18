@@ -30,7 +30,7 @@ export function Navigation() {
           </div>
 
           {/* Contact Button */}
-          <Button variant="outline">Contact</Button>
+          {/* <Button variant="outline">Contact</Button> */}
         </div>
       </div>
     </nav>

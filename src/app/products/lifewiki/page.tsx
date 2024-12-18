@@ -48,7 +48,7 @@ export default function LifeWikiProduct() {
           >
             <Button
               variant="secondary"
-              className="bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
+              className="bg-white bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
                 text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
                 hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
             >
@@ -64,7 +64,7 @@ export default function LifeWikiProduct() {
           >
             <Button
               variant="secondary"
-              className="bg-gradient-to-r from-pink-100 to-purple-100 hover:from-pink-200 hover:to-purple-200 
+              className="bg-white bg-gradient-to-r from-pink-100 to-purple-100 hover:from-pink-200 hover:to-purple-200 
                 text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
                 hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
             >
@@ -79,7 +79,7 @@ export default function LifeWikiProduct() {
           >
             <Button
               variant="secondary"
-              className="bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
+              className="bg-white bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
                 text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
                 hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
             >
@@ -98,9 +98,9 @@ export default function LifeWikiProduct() {
               The Challenge
             </h2>
             <p className="text-muted-foreground">
-              Nano content creators face significant barriers in building digital
-              influence and monetizing their content, despite having valuable
-              contributions to make.
+              Nano content creators face significant barriers in building
+              digital influence and monetizing their content, despite having
+              valuable contributions to make.
             </p>
           </div>
 
@@ -111,8 +111,8 @@ export default function LifeWikiProduct() {
                 Limited Resources
               </h3>
               <p className="text-sm text-muted-foreground">
-                Individual creators struggle to match the quality and consistency
-                of professional teams
+                Individual creators struggle to match the quality and
+                consistency of professional teams
               </p>
             </div>
 
@@ -152,7 +152,7 @@ export default function LifeWikiProduct() {
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">
+          <div className="bg-gradient-to-br from-[#F5D37A]/10 via-[#D852C3]/10 to-[#4997F2]/10 p-8 rounded-xl shadow-sm border border-gray-100">
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg">Key Findings</h3>
@@ -160,8 +160,8 @@ export default function LifeWikiProduct() {
                   <li className="flex items-start gap-2">
                     <BadgeCheck className="h-5 w-5 text-green-500 mt-1 flex-shrink-0" />
                     <span className="text-muted-foreground">
-                      Creators want professional benefits without leaving current
-                      lifestyle
+                      Creators want professional benefits without leaving
+                      current lifestyle
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -223,7 +223,7 @@ export default function LifeWikiProduct() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-gradient-to-br from-[#F5D37A]/10 via-[#D852C3]/10 to-[#4997F2]/10 p-6 rounded-xl shadow-sm border border-gray-100">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
                   <Users className="h-8 w-8 text-purple-600" />
@@ -271,7 +271,7 @@ export default function LifeWikiProduct() {
               </div>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-gradient-to-br from-[#F5D37A]/10 via-[#D852C3]/10 to-[#4997F2]/10 p-6 rounded-xl shadow-sm border border-gray-100">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
                   <Users className="h-8 w-8 text-purple-600" />
@@ -290,8 +290,8 @@ export default function LifeWikiProduct() {
                     Background
                   </h4>
                   <p className="text-sm text-muted-foreground">
-                    24-year-old software engineer wanting to share knowledge while
-                    maintaining career
+                    24-year-old software engineer wanting to share knowledge
+                    while maintaining career
                   </p>
                 </div>
 
@@ -334,7 +334,7 @@ export default function LifeWikiProduct() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-card p-6 rounded-xl shadow-sm border border-border">
+            <div className="bg-gradient-to-br from-[#F5D37A]/5 via-[#D852C3]/5 to-[#4997F2]/5 p-6 rounded-xl shadow-sm border border-border">
               <Brain className="h-8 w-8 text-purple-600 mb-3" />
               <h3 className="font-semibold text-foreground mb-2">
                 Smart Organization
@@ -371,7 +371,7 @@ export default function LifeWikiProduct() {
               </ul>
             </div>
 
-            <div className="bg-card p-6 rounded-xl shadow-sm border border-border">
+            <div className="bg-gradient-to-br from-[#F5D37A]/5 via-[#D852C3]/5 to-[#4997F2]/5 p-6 rounded-xl shadow-sm border border-border">
               <Sparkles className="h-8 w-8 text-purple-600 mb-3" />
               <h3 className="font-semibold text-foreground mb-2">
                 Seamless Experience
@@ -519,7 +519,7 @@ export default function LifeWikiProduct() {
           </div>
 
           <div className="grid grid-cols-1 gap-4">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-gradient-to-br from-[#F5D37A]/10 to-[#4997F2]/10 p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="font-semibold text-lg mb-4">
                 Phase 1: MVP Development
               </h3>
@@ -538,14 +538,15 @@ export default function LifeWikiProduct() {
                   <div>
                     <span className="font-medium">Basic Features</span>
                     <p className="text-sm text-muted-foreground">
-                      User authentication, content management, and reward tracking
+                      User authentication, content management, and reward
+                      tracking
                     </p>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-gradient-to-br from-[#F5D37A]/10 to-[#4997F2]/10 p-6 rounded-xl shadow-sm border border-gray-100">
               <h3 className="font-semibold text-lg mb-4">
                 Phase 2: Enhancement & Scaling
               </h3>
@@ -586,7 +587,7 @@ export default function LifeWikiProduct() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-gradient-to-br from-[#F5D37A]/5 via-[#D852C3]/5 to-[#4997F2]/5 p-6 rounded-xl shadow-sm border border-gray-100">
               <AlertTriangle className="h-8 w-8 text-purple-600 mb-3" />
               <h3 className="font-semibold mb-4">Technical Risks</h3>
               <ul className="space-y-3">
@@ -611,7 +612,7 @@ export default function LifeWikiProduct() {
               </ul>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div className="bg-gradient-to-br from-[#F5D37A]/5 via-[#D852C3]/5 to-[#4997F2]/5 p-6 rounded-xl shadow-sm border border-gray-100">
               <AlertTriangle className="h-8 w-8 text-purple-600 mb-3" />
               <h3 className="font-semibold mb-4">Business Risks</h3>
               <ul className="space-y-3">
