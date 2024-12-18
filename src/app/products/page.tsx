@@ -13,6 +13,8 @@ export default function ProductsPage() {
   const handleProductClick = (slug: string) => {
     if (slug === "lifewiki") {
       router.push("/products/lifewiki");
+    } else if (slug === "link3") {
+      router.push("/products/link3");
     } else {
       router.push(`/products/${slug}`);
     }

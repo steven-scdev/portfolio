@@ -48,41 +48,37 @@ export default function ProductPage({ params }: ProductPageProps) {
         {/* Action Buttons */}
         <div className="max-w-4xl mx-auto space-y-6">
           <div className="flex flex-wrap gap-4">
-            {product.websiteUrl && (
-              <a
-                href={product.websiteUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform transition-transform hover:scale-105"
+            <a
+              href="https://www.lifewiki.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-105"
+            >
+              <Button
+                variant="secondary"
+                className="bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
+                  text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
+                  hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
               >
-                <Button
-                  variant="secondary"
-                  className="bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
-                    text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
-                    hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
-                >
-                  ✨ Visit Website ✨
-                </Button>
-              </a>
-            )}
+                ✨ Visit Website ✨
+              </Button>
+            </a>
 
-            {product.appStoreUrl && (
-              <a
-                href={product.appStoreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transform transition-transform hover:scale-105"
+            <a
+              href="https://apps.apple.com/us/app/lifewiki/id1635640563"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-105"
+            >
+              <Button
+                variant="secondary"
+                className="bg-gradient-to-r from-pink-100 to-purple-100 hover:from-pink-200 hover:to-purple-200 
+                  text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
+                  hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
               >
-                <Button
-                  variant="secondary"
-                  className="bg-gradient-to-r from-pink-100 to-purple-100 hover:from-pink-200 hover:to-purple-200 
-                    text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
-                    hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
-                >
-                  🌟 Download on App Store 🌟
-                </Button>
-              </a>
-            )}
+                🌟 Download on App Store 🌟
+              </Button>
+            </a>
           </div>
         </div>
       </div>
@@ -103,7 +99,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             {/* Image Modal */}
             {isImageModalOpen && (
               <div
-                className="fixed inset-0 bg-white/80 z-50 flex items-center justify-center p-4"
+                className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
                 onClick={() => setIsImageModalOpen(false)}
               >
                 <div className="relative w-full max-w-5xl h-[90vh]">
@@ -132,7 +128,7 @@ export default function ProductPage({ params }: ProductPageProps) {
             >
               <Button
                 variant="secondary"
-                className="flex items-center gap-2 bg-white/50 hover:bg-white/70 text-slate-900 backdrop-blur-sm"
+                className="flex items-center gap-2 bg-black/50 hover:bg-black/70 text-white backdrop-blur-sm"
               >
                 <DownloadIcon className="h-4 w-4" />
                 Download Image
