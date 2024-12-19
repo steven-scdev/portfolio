@@ -15,6 +15,8 @@ export default function ProductsPage() {
       router.push("/products/lifewiki");
     } else if (slug === "link3") {
       router.push("/products/link3");
+    } else if (slug === "piney") {
+      router.push("/products/Piney");
     } else {
       router.push(`/products/${slug}`);
     }

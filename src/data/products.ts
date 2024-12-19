@@ -43,9 +43,9 @@ export const products: Product[] = [
     slug: "piney",
     title: "Piney",
     description:
-      "An AI-powered B2C knowledge platform leveraging machine learning for enhanced productivity and information retrieval",
+      "AI-powered reading companion that helps you understand complex topics easier and faster.",
     image: "/piney.jpg",
-    link: "/products/piney",
+    link: "/products/Piney",
     tags: [
       "AI",
       "Machine Learning",
