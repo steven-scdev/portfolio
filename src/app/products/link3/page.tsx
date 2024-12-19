@@ -2,6 +2,7 @@ import { Globe } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
+import Image from "next/image";
 
 export default function Link3Product() {
   return (
@@ -11,22 +12,21 @@ export default function Link3Product() {
         <h1 className="text-4xl font-bold">Link3</h1>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2">
+        {/* <div className="flex flex-wrap gap-2">
           <Badge variant="secondary">Web3</Badge>
           <Badge variant="secondary">Social</Badge>
           <Badge variant="secondary">Community</Badge>
-        </div>
+        </div> */}
 
         {/* Description */}
         <p className="text-muted-foreground text-lg leading-relaxed">
-          Link3 is a Web3 social platform that helps you connect with
-          like-minded people and build meaningful relationships in the
-          decentralized world.
+          Link3 is one of the biggest Web3 platform for organizations and
+          content creators to establish their digital profile on-chain.
         </p>
 
         {/* Action Buttons */}
         <div className="max-w-4xl mx-auto space-y-6">
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-col items-center gap-6">
             <Link
               href="https://link3.to/"
               target="_blank"
@@ -42,6 +42,17 @@ export default function Link3Product() {
                 ✨ Visit Website ✨
               </Button>
             </Link>
+
+            {/* Link3 Logo */}
+            <div className="w-full h-[500px] relative mt-8">
+              <Image
+                src="/link3-cart.jpg"
+                alt="Link3 Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

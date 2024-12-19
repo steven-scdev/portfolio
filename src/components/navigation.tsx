@@ -24,9 +24,15 @@ export function Navigation() {
             >
               Products
             </Link>
-            <Link href="/about" className="text-slate-600 hover:text-slate-900">
-              About
+            <Link
+              href="/writing"
+              className="text-slate-600 hover:text-slate-900"
+            >
+              Writing
             </Link>
+            {/* <Link href="/about" className="text-slate-600 hover:text-slate-900">
+              About
+            </Link> */}
           </div>
 
           {/* Contact Button */}

@@ -27,7 +27,7 @@ export const products: Product[] = [
     slug: "link3",
     title: "Cyber - Link3",
     description:
-      "A B2C blockchain platform building one of the largest verified Web3 communities, focusing on user engagement and community growth",
+      "A B2C Web3 platform building on-chain for verified Web3 communities and content creators.",
     image: "/link3-logo.jpg",
     link: "/products/link3",
     tags: [
@@ -53,7 +53,7 @@ export const products: Product[] = [
       "Productivity",
       "B2C",
     ],
-    profileImage: "/piney_logo.png",
+    profileImage: "/Piney-cart.jpg",
   },
   {
     slug: "coinmunity",
@@ -63,7 +63,7 @@ export const products: Product[] = [
     image: "/coinmunity.jpg",
     link: "/products/coinmunity",
     tags: ["Crypto", "Mobile App", "Trading", "Blockchain", "Fintech"],
-    profileImage: "/coinmunity_logo.png",
+    profileImage: "/coinmunity-logo.png",
   },
   {
     slug: "piney-mobile",
@@ -73,6 +73,6 @@ export const products: Product[] = [
     image: "/piney-mobile.jpg",
     link: "/products/piney-mobile",
     tags: ["Mobile App", "AI", "Audio Learning", "EdTech", "Personalization"],
-    profileImage: "/piney_mobile_logo.png",
+    profileImage: "/piney-mobile.jpg",
   },
 ];

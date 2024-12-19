@@ -1,0 +1,8 @@
+model Writing {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  content     String   @db.Text
+  topics      String[]
+  date        DateTime @default(now())
+} 

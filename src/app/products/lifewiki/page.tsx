@@ -24,13 +24,13 @@ export default function LifeWikiProduct() {
         <h1 className="text-4xl font-bold">LifeWiki</h1>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2">
+        {/* <div className="flex flex-wrap gap-2">
           {["Web3", "Mobile", "Knowledge Management"].map((tag) => (
             <Badge key={tag} variant="secondary">
               {tag}
             </Badge>
           ))}
-        </div>
+        </div> */}
 
         {/* Description */}
         <p className="text-muted-foreground text-lg leading-relaxed">
@@ -328,8 +328,9 @@ export default function LifeWikiProduct() {
               Our Solution
             </h2>
             <p className="text-muted-foreground">
-              LifeWiki provides an intuitive and powerful personal knowledge
-              management system that adapts to your needs.
+              LifeWiki provides a decentralized collaboration platform for nano
+              content creators to build their digital influence and monetize
+              their content efficiently with eachother.
             </p>
           </div>
 
@@ -490,9 +491,7 @@ export default function LifeWikiProduct() {
                 <Target className="h-8 w-8 text-purple-600 mb-3" />
                 <div className="text-3xl font-bold text-purple-600">10%</div>
                 <h3 className="font-semibold mb-2">Retention Rate</h3>
-                <p className="text-sm text-muted-foreground">
-                  30-day user retention showing strong platform engagement
-                </p>
+                <p className="text-sm text-muted-foreground"></p>
               </div>
 
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl shadow-sm">
