@@ -2,14 +2,8 @@
 import {
   BadgeCheck,
   Users,
-  Zap,
-  Brain,
-  Target,
   AlertTriangle,
   Rocket,
-  Clock,
-  Sparkles,
-  Globe,
   Smartphone,
   DollarSign,
 } from "lucide-react";
@@ -23,7 +17,6 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
-import Image from "next/image";
 
 function CoinmunityPortfolio() {
   const [showModal, setShowModal] = useState(false);

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "../../components/ui/button";
 
 export function Navigation() {
   return (
@@ -34,9 +33,6 @@ export function Navigation() {
               About
             </Link> */}
           </div>
-
-          {/* Contact Button */}
-          {/* <Button variant="outline">Contact</Button> */}
         </div>
       </div>
     </nav>

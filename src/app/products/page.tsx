@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Link from "next/link";
 import { products } from "@/data/products";
 import { ProductCard } from "../../components/product-card";
 import { useRouter } from "next/navigation";

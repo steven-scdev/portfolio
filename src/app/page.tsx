@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -8,10 +7,10 @@ export default function Home() {
       <main className="container mx-auto px-4 py-20 flex-grow">
         <div className="flex flex-col gap-8 max-w-3xl">
           <h1 className="text-5xl sm:text-6xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 text-transparent bg-clip-text">
-            Hey, I'm Steven Chen 👋
+            Hey, I&apos;m Steven Chen 👋
           </h1>
           <p className="text-xl text-muted-foreground">
-            Graduated from Berkeley, I'm a product manager & software developer
+            Graduated from Berkeley, I&apos;m a product manager & software developer
             passionate about building products that make a difference, bridging
             the gap between technology and society.
           </p>

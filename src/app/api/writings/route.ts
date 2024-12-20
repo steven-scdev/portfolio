@@ -15,7 +15,8 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json(writing);
-  } catch (error) {
+  } catch (err) {
+    console.error(err);
     return NextResponse.json(
       { error: "Error creating writing" },
       { status: 500 }
