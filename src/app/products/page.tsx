@@ -17,6 +17,8 @@ export default function ProductsPage() {
       router.push("/products/link3");
     } else if (slug === "piney") {
       router.push("/products/Piney");
+    } else if (slug === "coinmunity") {
+      router.push("/products/Coinmunity");
     } else {
       router.push(`/products/${slug}`);
     }
