@@ -48,9 +48,9 @@ export default function LifeWikiProduct() {
           >
             <Button
               variant="secondary"
-              className="bg-white bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
-                text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
-                hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
+              className="bg-white bg-gradient-to-r from-green-100 to-emerald-100 hover:from-green-200 hover:to-emerald-200 
+                text-green-700 font-medium px-6 py-2 rounded-full shadow-md 
+                hover:shadow-lg border-2 border-green-200 transition-all duration-300"
             >
               ✨ Visit Website ✨
             </Button>
@@ -64,9 +64,9 @@ export default function LifeWikiProduct() {
           >
             <Button
               variant="secondary"
-              className="bg-white bg-gradient-to-r from-pink-100 to-purple-100 hover:from-pink-200 hover:to-purple-200 
-                text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
-                hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
+              className="bg-white bg-gradient-to-r from-emerald-100 to-green-100 hover:from-emerald-200 hover:to-green-200 
+                text-green-700 font-medium px-6 py-2 rounded-full shadow-md 
+                hover:shadow-lg border-2 border-green-200 transition-all duration-300"
             >
               🌟 Download on App Store 🌟
             </Button>
@@ -79,9 +79,9 @@ export default function LifeWikiProduct() {
           >
             <Button
               variant="secondary"
-              className="bg-white bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
-                text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
-                hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
+              className="bg-white bg-gradient-to-r from-emerald-100 to-green-100 hover:from-emerald-200 hover:to-green-200 
+                text-green-700 font-medium px-6 py-2 rounded-full shadow-md 
+                hover:shadow-lg border-2 border-green-200 transition-all duration-300"
             >
               💫 Download Portfolio 💫
             </Button>

@@ -53,9 +53,9 @@ export default function PineyProduct() {
           >
             <Button
               variant="secondary"
-              className="bg-white bg-gradient-to-r from-purple-100 to-pink-100 hover:from-purple-200 hover:to-pink-200 
-                text-purple-700 font-medium px-6 py-2 rounded-full shadow-md 
-                hover:shadow-lg border-2 border-purple-200 transition-all duration-300"
+              className="bg-gradient-to-r from-yellow-400 to-amber-500 hover:from-yellow-500 hover:to-amber-600
+                text-white font-medium px-6 py-2 rounded-full shadow-md 
+                hover:shadow-lg border-none transition-all duration-300"
             >
               ✨ Visit Website ✨
             </Button>
@@ -233,7 +233,7 @@ export default function PineyProduct() {
                     Pain Points
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Overwhelmed by volume of papers</li>
+                    <li>�� Overwhelmed by volume of papers</li>
                     <li>• Struggles with concept connections</li>
                     <li>• Limited time for reading</li>
                   </ul>
