@@ -1,6 +1,6 @@
-import { Globe } from "lucide-react";
+import /* Remove Globe */ "lucide-react";
 import Link from "next/link";
-import { Badge } from "../../../../components/ui/badge";
+import /* Remove Badge */ "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import Image from "next/image";
 

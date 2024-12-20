@@ -8,11 +8,7 @@ import {
   Rocket,
   Clock,
   Sparkles,
-  Globe,
-  Apple,
-  Download,
 } from "lucide-react";
-import Link from "next/link";
 import { Button } from "../../../../components/ui/button";
 import { Badge } from "../../../../components/ui/badge";
 
@@ -665,7 +661,7 @@ export default function LifeWikiProduct() {
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Global creator community expansion</li>
                   <li>• Integration with major platforms</li>
-                  <li>• Enhanced monetization options</li>
+                  <li>�� Enhanced monetization options</li>
                   <li>• Creator education programs</li>
                 </ul>
               </div>

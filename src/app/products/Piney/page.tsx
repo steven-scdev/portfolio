@@ -3,7 +3,6 @@ import {
   Users,
   Book,
   Brain,
-  Target,
   AlertTriangle,
   Rocket,
   Clock,
@@ -233,7 +232,7 @@ export default function PineyProduct() {
                     Pain Points
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>�� Overwhelmed by volume of papers</li>
+                    <li>• Overwhelmed by volume of papers</li>
                     <li>• Struggles with concept connections</li>
                     <li>• Limited time for reading</li>
                   </ul>
