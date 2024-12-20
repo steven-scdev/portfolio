@@ -33,7 +33,7 @@ export function ProductCard({ product }: ProductCardProps) {
           <h3 className="text-2xl font-semibold">{product.title}</h3>
           <p className="text-muted-foreground">{product.description}</p>
           <div className="flex flex-wrap gap-2">
-            {product.tags.map((tag) => (
+            {product.tags?.map((tag) => (
               <Badge
                 key={tag}
                 variant="secondary"

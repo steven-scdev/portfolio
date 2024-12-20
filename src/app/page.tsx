@@ -10,9 +10,9 @@ export default function Home() {
             Hey, I&apos;m Steven Chen 👋
           </h1>
           <p className="text-xl text-muted-foreground">
-            Graduated from Berkeley, I&apos;m a product manager & software developer
-            passionate about building products that make a difference, bridging
-            the gap between technology and society.
+            Graduated from Berkeley, I&apos;m a product manager & software
+            developer passionate about building products that make a difference,
+            bridging the gap between technology and society.
           </p>
 
           {/* CTA Buttons */}
@@ -37,7 +37,7 @@ export default function Home() {
           <div className="p-6 rounded-xl border border-gray-200 hover:border-gray-300 transition bg-gradient-to-br from-[#F5D37A]/5 via-[#D852C3]/5 to-[#4997F2]/5">
             <h2 className="text-xl font-semibold mb-2">Latest Projects</h2>
             <p className="text-muted-foreground">
-              Check out what I've been building recently.
+              I&apos;ve been building recently.
             </p>
           </div>
 

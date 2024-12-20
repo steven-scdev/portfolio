@@ -8,6 +8,7 @@ export interface Product {
   profileImage: string;
   websiteUrl?: string;
   appStoreUrl?: string;
+  features?: string[];
 }
 
 export const products: Product[] = [
@@ -22,6 +23,11 @@ export const products: Product[] = [
     profileImage: "/lifewiki-cart.jpg",
     websiteUrl: "https://www.lifewiki.xyz/",
     appStoreUrl: "https://apps.apple.com/us/app/lifewiki/id1635640563",
+    features: [
+      "Feature 1",
+      "Feature 2",
+      // ... more features
+    ],
   },
   {
     slug: "piney",
@@ -38,6 +44,11 @@ export const products: Product[] = [
       "B2C",
     ],
     profileImage: "/Piney-cart.jpg",
+    features: [
+      "Feature 1",
+      "Feature 2",
+      // ... more features
+    ],
   },
   {
     slug: "coinmunity",
@@ -48,6 +59,11 @@ export const products: Product[] = [
     link: "/products/coinmunity",
     tags: ["Crypto", "Mobile App", "Trading", "Blockchain", "Fintech"],
     profileImage: "/coin-cart.jpg",
+    features: [
+      "Feature 1",
+      "Feature 2",
+      // ... more features
+    ],
   },
   {
     slug: "link3",
@@ -64,6 +80,11 @@ export const products: Product[] = [
       "Onchain-Verification",
     ],
     profileImage: "/link3-cart.jpg",
+    features: [
+      "Feature 1",
+      "Feature 2",
+      // ... more features
+    ],
   },
   //   {
   //     slug: "piney-mobile",

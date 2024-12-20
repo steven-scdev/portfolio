@@ -10,7 +10,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Button } from "../../../../components/ui/button";
-import { Badge } from "../../../../components/ui/badge";
 
 export default function LifeWikiProduct() {
   return (
@@ -661,7 +660,7 @@ export default function LifeWikiProduct() {
                 <ul className="space-y-2 text-muted-foreground">
                   <li>• Global creator community expansion</li>
                   <li>• Integration with major platforms</li>
-                  <li>�� Enhanced monetization options</li>
+                  <li>• Enhanced monetization options</li>
                   <li>• Creator education programs</li>
                 </ul>
               </div>

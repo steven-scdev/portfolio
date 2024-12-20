@@ -1,6 +1,3 @@
-"use client";
-
-import { useState, use } from "react";
 import { products } from "@/data/products";
 import { notFound } from "next/navigation";
 import { Badge } from "../../../../components/ui/badge";
@@ -8,17 +5,16 @@ import { Button } from "../../../../components/ui/button";
 import { DownloadIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
-interface ProductPageProps {
-  params: {
-    slug: string;
-  };
-}
+// Import Next.js types
 
-export default function ProductPage({ params }: ProductPageProps) {
-  const [isImageModalOpen, setIsImageModalOpen] = useState(false);
-  const resolvedParams = use(params);
+type Props = {
+  params: { slug: string };
+};
 
-  // Find the product using the slug
+export default async function ProductPage({
+  params,
+}: Props & { params: Promise<{ slug: string }> }) {
+  const resolvedParams = await params;
   const product = products.find((p) => p.slug === resolvedParams.slug);
 
   if (!product) {
@@ -93,48 +89,29 @@ export default function ProductPage({ params }: ProductPageProps) {
               fill
               className="object-contain cursor-pointer"
               priority
-              onClick={() => setIsImageModalOpen(true)}
             />
 
-            {/* Image Modal */}
-            {isImageModalOpen && (
-              <div
-                className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
-                onClick={() => setIsImageModalOpen(false)}
-              >
-                <div className="relative w-full max-w-5xl h-[90vh]">
-                  <Image
-                    src={product.image}
-                    alt={`Screenshot of ${product.title}`}
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </div>
+            {/* Download Image Button */}
+            {product.image && (
+              <div className="absolute bottom-4 right-4">
+                <a
+                  href={product.image}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <Button
+                    variant="secondary"
+                    className="flex items-center gap-2 bg-black/50 hover:bg-black/70 text-white backdrop-blur-sm"
+                  >
+                    <DownloadIcon className="h-4 w-4" />
+                    Download Image
+                  </Button>
+                </a>
               </div>
             )}
           </>
-        )}
-
-        {/* Download Image Button */}
-        {product.image && (
-          <div className="absolute bottom-4 right-4">
-            <a
-              href={product.image}
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <Button
-                variant="secondary"
-                className="flex items-center gap-2 bg-black/50 hover:bg-black/70 text-white backdrop-blur-sm"
-              >
-                <DownloadIcon className="h-4 w-4" />
-                Download Image
-              </Button>
-            </a>
-          </div>
         )}
       </div>
 

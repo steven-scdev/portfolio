@@ -30,6 +30,7 @@ export async function GET() {
     const writings = await Writing.find().sort({ date: -1 });
     return NextResponse.json(writings);
   } catch (error) {
+    console.error(error);
     return NextResponse.json(
       { error: "Error fetching writings" },
       { status: 500 }

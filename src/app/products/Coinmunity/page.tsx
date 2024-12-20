@@ -142,8 +142,8 @@ function CoinmunityPortfolio() {
                 Limited Mobile Support
               </h3>
               <p className="text-sm text-muted-foreground">
-                Poor mobile experiences don't match Gen Z's preferred way of
-                trading
+                Poor mobile experiences don&apos;t match Gen Z&apos;s preferred
+                way of trading
               </p>
             </div>
           </div>
