@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { connectDB } from "@/lib/mongodb";
+// import { connectDB } from "@/lib/mongodb";
 import { Writing } from "@/models/Writing";
 import { format } from "date-fns";
 
@@ -14,8 +14,10 @@ interface WritingDocument {
 }
 
 export default async function WritingPage() {
-  await connectDB();
-  const writings = (await Writing.find().sort({ date: -1 })) as WritingDocument[];
+  //   await connectDB();
+  const writings = (await Writing.find().sort({
+    date: -1,
+  })) as WritingDocument[];
 
   return (
     <main className="container mx-auto px-4 py-8">
