@@ -20,8 +20,9 @@ export default function Link3Product() {
 
         {/* Description */}
         <p className="text-muted-foreground text-lg leading-relaxed">
-          Link3 is one of the biggest Web3 platform for organizations and
-          content creators to establish their digital profile on-chain.
+          Link3 is one of the biggest decentralized platforms for Web3
+          organizations and content creators to establish their digital profile
+          on-chain.
         </p>
 
         {/* Action Buttons */}

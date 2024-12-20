@@ -63,7 +63,7 @@ export const products: Product[] = [
     image: "/coinmunity.jpg",
     link: "/products/coinmunity",
     tags: ["Crypto", "Mobile App", "Trading", "Blockchain", "Fintech"],
-    profileImage: "/coinmunity-logo.png",
+    profileImage: "/coin-cart.jpg",
   },
   {
     slug: "piney-mobile",
