@@ -11,9 +11,9 @@ export default function Home() {
             Hey, I'm Steven Chen 👋
           </h1>
           <p className="text-xl text-muted-foreground">
-            I'm a product manager & software developer passionate about building
-            products that make a difference, bridging the gap between technology
-            and society.
+            Graduated from Berkeley, I'm a product manager & software developer
+            passionate about building products that make a difference, bridging
+            the gap between technology and society.
           </p>
 
           {/* CTA Buttons */}
