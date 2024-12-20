@@ -13,8 +13,8 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    slug: "lifewiki",
-    title: "LifeWiki",
+    slug: "LifeWiki",
+    title: "lifewiki",
     description:
       "The world's first decentralized user-generated content creator DAO platform, enabling collaborative content creation and curation through blockchain technology",
     image: "/lifewiki.jpg",
@@ -30,7 +30,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "piney",
+    slug: "Piney",
     title: "Piney",
     description:
       "AI-powered reading companion that helps you understand complex topics easier and faster.",
@@ -51,7 +51,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "coinmunity",
+    slug: "Coinmunity",
     title: "Coinmunity",
     description:
       "A B2C mobile cryptocurrency trading platform focused on simplifying the crypto adoption journey with integrated wallet features",
@@ -66,8 +66,8 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "link3",
-    title: "Cyber - Link3",
+    slug: "Cyber - Link3",
+    title: "link3",
     description:
       "A B2C Web3 platform building on-chain for verified Web3 communities and content creators.",
     image: "/link3-logo.jpg",

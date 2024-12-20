@@ -30,7 +30,7 @@ export function ProductCard({ product }: ProductCardProps) {
           />
         </div>
         <div className="p-6 space-y-4">
-          <h3 className="text-2xl font-semibold">{product.title}</h3>
+          <h3 className="text-2xl font-semibold">{product.slug}</h3>
           <p className="text-muted-foreground">{product.description}</p>
           <div className="flex flex-wrap gap-2">
             {product.tags?.map((tag) => (
