@@ -24,22 +24,6 @@ export const products: Product[] = [
     appStoreUrl: "https://apps.apple.com/us/app/lifewiki/id1635640563",
   },
   {
-    slug: "link3",
-    title: "Cyber - Link3",
-    description:
-      "A B2C Web3 platform building on-chain for verified Web3 communities and content creators.",
-    image: "/link3-logo.jpg",
-    link: "/products/link3",
-    tags: [
-      "Blockchain",
-      "Web3",
-      "Professionals",
-      "Social Platform",
-      "Onchain-Verification",
-    ],
-    profileImage: "/link3-cart.jpg",
-  },
-  {
     slug: "piney",
     title: "Piney",
     description:
@@ -64,6 +48,22 @@ export const products: Product[] = [
     link: "/products/coinmunity",
     tags: ["Crypto", "Mobile App", "Trading", "Blockchain", "Fintech"],
     profileImage: "/coin-cart.jpg",
+  },
+  {
+    slug: "link3",
+    title: "Cyber - Link3",
+    description:
+      "A B2C Web3 platform building on-chain for verified Web3 communities and content creators.",
+    image: "/link3-logo.jpg",
+    link: "/products/link3",
+    tags: [
+      "Blockchain",
+      "Web3",
+      "Professionals",
+      "Social Platform",
+      "Onchain-Verification",
+    ],
+    profileImage: "/link3-cart.jpg",
   },
   {
     slug: "piney-mobile",
