@@ -1,11 +1,31 @@
 import mongoose from 'mongoose';
 
-const WritingSchema = new mongoose.Schema({
-  title: { type: String, required: true },
-  description: { type: String, required: true },
-  content: { type: String, required: true },
-  topics: [{ type: String }],
-  date: { type: Date, default: Date.now },
+// Define the schema
+const writingSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+  },
+  date: {
+    type: Date,
+    required: true,
+  },
+  topics: {
+    type: [String],
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  content: {
+    type: String,
+    required: true,
+  },
+}, {
+  // Add this to ensure proper collection name
+  collection: 'writings'  // Explicitly set collection name
 });
 
-export const Writing = mongoose.models.Writing || mongoose.model('Writing', WritingSchema); 
+// Check if model exists before creating
+export const Writing = mongoose.models.Writing || mongoose.model('Writing', writingSchema); 
