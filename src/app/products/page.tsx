@@ -7,8 +7,8 @@ import { useRouter } from "next/navigation";
 export default function ProductsPage() {
   const router = useRouter();
 
-  const handleProductClick = (slug: string) => {
-    router.push(`/products/${slug}`);
+  const handleProductClick = (title: string) => {
+    router.push(`/products/${title}`);
   };
 
   return (
@@ -17,7 +17,7 @@ export default function ProductsPage() {
         {products.map((product) => (
           <div
             key={product.slug}
-            onClick={() => handleProductClick(product.slug)}
+            onClick={() => handleProductClick(product.title)}
           >
             <ProductCard
               product={{ ...product, image: product.profileImage }}
