@@ -93,6 +93,7 @@ export function WritingForm() {
           onChange={(e) => setTopics(e.target.value)}
           placeholder="Technology, AI, Web Development"
           required
+          autoComplete="off"
         />
       </div>
 
@@ -122,6 +123,7 @@ export function WritingForm() {
             setPasswordError(false);
           }}
           required
+          autoComplete="new-password"
           className={passwordError ? "border-red-500" : ""}
         />
         {passwordError && (
