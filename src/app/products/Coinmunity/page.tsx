@@ -1,3 +1,4 @@
+"use client";
 import {
   BadgeCheck,
   Users,
@@ -14,10 +15,45 @@ import {
 } from "lucide-react";
 import { Button } from "../../../../components/ui/button";
 import { Badge } from "../../../../components/ui/badge";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
+import Image from "next/image";
 
 function CoinmunityPortfolio() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleAppAccess = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowModal(true);
+  };
+
   return (
     <main className="container mx-auto px-4 py-8">
+      {/* Add Dialog component */}
+      <Dialog open={showModal} onOpenChange={setShowModal}>
+        <DialogContent className="sm:max-w-[425px]">
+          <DialogHeader>
+            <DialogTitle>Beta Testing Access</DialogTitle>
+            <DialogDescription>
+              Coinmunity is currently in beta testing. Please email{" "}
+              <a
+                href="mailto:steven.yujunchen@berkeley.edu"
+                className="text-purple-600 hover:underline"
+              >
+                steven.yujunchen@berkeley.edu
+              </a>{" "}
+              for TestFlight access.
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
+
       {/* Product Header */}
       <div className="max-w-4xl mx-auto space-y-6">
         <h1 className="text-4xl font-bold">Coinmunity</h1>
@@ -51,9 +87,8 @@ function CoinmunityPortfolio() {
           </p> */}
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://www.coinmunity.fun"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#"
+              onClick={handleAppAccess}
               className="transform transition-transform hover:scale-105"
             >
               <Button
@@ -62,23 +97,7 @@ function CoinmunityPortfolio() {
                   text-blue-700 font-medium px-6 py-2 rounded-full shadow-md 
                   hover:shadow-lg border-2 border-blue-200 transition-all duration-300"
               >
-                ✨ Download App ✨
-              </Button>
-            </a>
-
-            <a
-              href="https://www.coinmunity.fun"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transform transition-transform hover:scale-105"
-            >
-              <Button
-                variant="secondary"
-                className="bg-white bg-gradient-to-r from-cyan-100 to-blue-100 hover:from-cyan-200 hover:to-blue-200 
-                  text-blue-700 font-medium px-6 py-2 rounded-full shadow-md 
-                  hover:shadow-lg border-2 border-blue-200 transition-all duration-300"
-              >
-                🌟 Visit Website 🌟
+                ✨ Request Beta Access ✨
               </Button>
             </a>
           </div>
@@ -337,7 +356,7 @@ function CoinmunityPortfolio() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-[#F5D37A]/5 via-[#D852C3]/5 to-[#4997F2]/5 p-6 rounded-xl shadow-sm border border-border">
               <Smartphone className="h-8 w-8 text-purple-600 mb-3" />
               <h3 className="font-semibold text-foreground mb-2">
@@ -408,6 +427,66 @@ function CoinmunityPortfolio() {
                   </div>
                 </li>
               </ul>
+            </div>
+
+            {/* App Screenshots */}
+            <div className="lg:col-span-2 grid grid-cols-2 md:grid-cols-4 gap-4">
+              <Image
+                src="/coinmunity/Home.png"
+                alt="Buy interface showing payment options"
+                width={300}
+                height={600}
+                className="rounded-2xl shadow-lg w-full"
+              />
+              <Image
+                src="/coinmunity/Trading1.png"
+                alt="Embedded wallet interface"
+                width={300}
+                height={600}
+                className="rounded-2xl shadow-lg w-full"
+              />
+              <Image
+                src="/coinmunity/Trading2.png"
+                alt="Trading interface"
+                width={300}
+                height={600}
+                className="rounded-2xl shadow-lg w-full"
+              />
+              <Image
+                src="/coinmunity/Trading3.png"
+                alt="Community features interface"
+                width={300}
+                height={600}
+                className="rounded-2xl shadow-lg w-full"
+              />{" "}
+              <Image
+                src="/coinmunity/coin-details.png"
+                alt="Community features interface"
+                width={300}
+                height={600}
+                className="rounded-2xl shadow-lg w-full"
+              />{" "}
+              <Image
+                src="/coinmunity/Home-black.png"
+                alt="Community features interface"
+                width={300}
+                height={600}
+                className="rounded-2xl shadow-lg w-full"
+              />{" "}
+              <Image
+                src="/coinmunity/onboarding.png"
+                alt="Community features interface"
+                width={300}
+                height={600}
+                className="rounded-2xl shadow-lg w-full"
+              />{" "}
+              <Image
+                src="/coinmunity/sell.png"
+                alt="Community features interface"
+                width={300}
+                height={600}
+                className="rounded-2xl shadow-lg w-full"
+              />
             </div>
           </div>
         </section>

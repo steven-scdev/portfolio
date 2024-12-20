@@ -65,14 +65,14 @@ export const products: Product[] = [
     ],
     profileImage: "/link3-cart.jpg",
   },
-  {
-    slug: "piney-mobile",
-    title: "Piney Mobile",
-    description:
-      "An AI-driven B2C audio learning platform delivering personalized educational content through mobile devices",
-    image: "/piney-mobile.jpg",
-    link: "/products/piney-mobile",
-    tags: ["Mobile App", "AI", "Audio Learning", "EdTech", "Personalization"],
-    profileImage: "/piney-mobile.jpg",
-  },
+  //   {
+  //     slug: "piney-mobile",
+  //     title: "Piney Mobile",
+  //     description:
+  //       "An AI-driven B2C audio learning platform delivering personalized educational content through mobile devices",
+  //     image: "/piney-mobile.jpg",
+  //     link: "/products/piney-mobile",
+  //     tags: ["Mobile App", "AI", "Audio Learning", "EdTech", "Personalization"],
+  //     profileImage: "/piney-mobile.jpg",
+  //   },
 ];
