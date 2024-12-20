@@ -19,6 +19,8 @@ export default function ProductsPage() {
       router.push("/products/Piney");
     } else if (slug === "coinmunity") {
       router.push("/products/Coinmunity");
+    } else if (slug === "piney-mobile") {
+      router.push("/products/Piney-mobile");
     } else {
       router.push(`/products/${slug}`);
     }
