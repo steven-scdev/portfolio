@@ -23,12 +23,12 @@ export function Navigation() {
             >
               Products
             </Link>
-            <Link
+            {/* <Link
               href="/writing"
               className="text-slate-600 hover:text-slate-900"
             >
               Writing
-            </Link>
+            </Link> */}
             {/* <Link href="/about" className="text-slate-600 hover:text-slate-900">
               About
             </Link> */}
