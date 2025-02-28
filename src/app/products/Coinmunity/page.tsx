@@ -81,8 +81,9 @@ function CoinmunityPortfolio() {
           </p> */}
           <div className="flex flex-wrap gap-4">
             <a
-              href="#"
-              onClick={handleAppAccess}
+              href="https://testflight.apple.com/join/PTUEvrP6"
+              target="_blank"
+              rel="noopener noreferrer"
               className="transform transition-transform hover:scale-105"
             >
               <Button
@@ -91,7 +92,7 @@ function CoinmunityPortfolio() {
                   text-blue-700 font-medium px-6 py-2 rounded-full shadow-md 
                   hover:shadow-lg border-2 border-blue-200 transition-all duration-300"
               >
-                ✨ Request Beta Access ✨
+                ✨ Download Beta ✨
               </Button>
             </a>
           </div>
