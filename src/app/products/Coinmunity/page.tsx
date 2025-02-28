@@ -22,11 +22,6 @@ import {
 function CoinmunityPortfolio() {
   const [showModal, setShowModal] = useState(false);
 
-  const handleAppAccess = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setShowModal(true);
-  };
-
   return (
     <main className="container mx-auto px-4 py-8">
       {/* Add Dialog component */}
